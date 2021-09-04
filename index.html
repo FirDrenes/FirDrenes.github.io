@@ -32,8 +32,14 @@
     </head>
     <body>
         <h1>Marvelous picture of nature</h1>
-        <img src="images/nature.jpg" alt="Exciting view of nature: majestic mountains, green firs, grass and nice lake"
-         width="600" height="400" id="main_img"/>
+        <img id="main_img"
+         src="images/nature.jpg" width="600px" height=""
+         alt="Exciting view of nature: majestic mountains, green firs, grass and nice lake"
+         srcset="images/small.jpg 469w,
+                 images/medium.jpg 800w,
+                 images/large.jpg 1200w"
+         sizes="(min-width: 1200px) 65vw, 
+                50vw"> 
          <h2>Hello!</h2>
          <h2 style='text-align: left;'>Menu</h2>
          <ul>
@@ -60,7 +66,7 @@
              <li>a daughter</li>
              <li>a sister</li>
          </ul>
-         <p lang='ru'> Пример на японском: <span lang='jp' style='font-size: 30px'> ご飯が熱い。</span> </p>
+         <p lang='ru'> Пример на японском: <span lang='ja' style='font-size: 30px'> ご飯が熱い。</span> </p>
          <button>Change user</button> 
          <!-- links to other web pages -->
          <a href="https://fonts.google.com/" title="Google Fonts for decorating your text">Fonts</a> <br>
